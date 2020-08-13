@@ -1,0 +1,86 @@
+<html>
+<head>
+<style>
+.button {
+  display: inline-block;
+  
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: orange;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  position: absolute;
+  top: 8px;
+  right: 28px;
+}
+
+.button:hover {background-color: black}
+
+.button:active {
+  background-color: orange;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+h1{
+  text-align : center;
+  margin-right : 32px;
+}
+table, th, td {
+  border: 6px solid;
+  border-collapse: collapse;
+  border-color: orange;
+  background-color: lightgrey;
+}
+th, td {
+  padding: 5px;
+  text-align: center;
+}
+
+</style>
+</head>
+<body>
+<div><h1 style="background-color:orange;">AVENUE:GUEST DETAILS</h1><button class="button" style="float: right;">Home</button></div>
+<div style="text-align: center;"></div>
+<br>
+<br>
+<table style="width:100%; background-color: lightorange;">
+<tr>
+<td colspan=2><b>AVENUE: GUEST ID</b></td>
+<td rowspan=2 colspan=2><img src="guest.jpg" style="height:250px; width:400px;"></td>
+</tr>
+<tr>
+<td><form>
+  Room Number: <input type="text" name="rno">
+  <br><br>
+  Block:<input type="text" name="block">
+</form></td>
+<td><form>
+  Service Type: <input type="text" name="type">
+</form></td>
+</tr>
+<tr>
+<td><form>
+  Guest Aadhar: <input type="text" name="adhar">
+</form></td>
+<td><form>
+  Date of Booking: <input type="text" name="dob">
+</form></td>
+<td>
+<form>
+  Date of Expiry of Booking: <input type="text" name="doeb">
+</form></td>
+<td><form>Renewable:
+  <input type="radio" name="avail1" value="yes" checked> Yes<br>
+  <input type="radio" name="avail2" value="no"> No<br>
+</form>
+</td>
+</tr>
+</table>
+</body>
+</html>
+
